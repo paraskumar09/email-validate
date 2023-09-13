@@ -1,0 +1,219 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(235, 18%, 26%);
+    height: 100vh;
+    width: 100vw;
+  
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 25px;
+}
+
+
+
+.left
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem;    
+    
+    width: 30rem;
+}
+
+.head1
+{
+    font-size: 3.5rem;
+    color: rgb(49, 46, 46);
+}
+
+.head2
+{
+   color:rgba(54, 51, 51,0.7) ;
+   font-weight: 600;
+   line-height: 1.7rem;
+}
+
+.points
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    color:rgba(54, 51, 51,0.7) ;
+    font-weight: 550;
+    font-size: 1rem;
+}
+
+.pointdesc
+{
+    margin-left: 1rem;
+}
+
+.emailDiv
+{
+    margin-top: 2rem;
+}
+
+.emailbox
+{
+    height: 3.5rem;
+    width: 22rem;
+    border-radius: 8px;
+    border: 1px solid rgb(97, 87, 87);
+    padding: 0 1rem ;
+    font-size: 1rem;
+    font-weight: 500;
+    color:rgb(72, 66, 66) ;  
+}
+
+.emaillabel
+{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.subscribeBtn
+{
+    height: 3.5rem;
+    width: 22rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    color: white;
+    background: linear-gradient(to right,  #de418d,#e6782a); 
+    cursor: pointer;
+}
+
+.subscribeBtn:hover
+{
+    background: hsl(234, 29%, 20%);
+}
+
+.aboveemail
+{
+    display: flex;
+    gap: 8rem;
+    
+}
+
+.valid
+{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: hsl(4, 100%, 67%);
+    display: none;
+}
+
+.notvalid
+{
+    border: 1px solid red;
+    background-color: rgba(255, 17, 0,0.3);
+    color: hsl(4, 100%, 67%);
+    
+}
+
+.container2
+{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 30em;
+    gap: 2rem;
+    background-color: white;
+    padding: 3rem;
+    padding-left: 4rem;
+    border-radius: 2rem;
+    display: none;
+}
+
+h1
+{
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    line-height: 3.2rem;
+}
+
+.thankspara
+{
+    line-height: 1.5rem;
+    color: hsl(235, 34%, 37%);
+    /* font-weight: 550; */
+}
+
+.subscribedemail
+{
+    font-weight: 700;
+}
+
+.dismissBtn
+{
+    height: 3.5rem;
+    width: 22rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+   background-color: hsl(234, 29%, 20%);
+    cursor: pointer;
+   
+}
+.dismissBtn:hover
+{
+    background: linear-gradient(to right,  #de418d,#e6782a); 
+}
+
+@media (max-width:900px) {
+    .container{
+        transform: scale();
+    }
+    
+}
+
+@media (max-width:750px) {
+    .container{
+        transform: scale(0.5);
+    }
+    
+}
+@media (max-width:550px) {
+    .container{
+        transform: scale(0.5);
+        flex-direction: column;
+        padding: 0;    }
+
+    .left
+    {
+        order: 2;
+    }
+    .right
+    {
+        order: 1;
+    }
+    .right img{
+        width: 100%;
+    }
+    
+}
